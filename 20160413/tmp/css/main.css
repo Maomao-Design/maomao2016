@@ -520,3 +520,35 @@ input:focus {
       width: 300px; }
       .index-product-wrap .index-product-u li img {
         max-width: 100%; }
+
+.index-about {
+  width: 730px;
+  min-height: 300px; }
+  .index-about .index-ab-title {
+    padding-top: 36px;
+    text-align: center; }
+  .index-about .index-ab-title2 {
+    text-align: center;
+    padding-top: 30px; }
+    .index-about .index-ab-title2 span {
+      display: inline-block;
+      font-size: 24px;
+      padding: 5px 40px;
+      background: #174091;
+      color: #FFF; }
+  .index-about .index-ab-content p {
+    text-indent: 30px;
+    font-size: 16px;
+    color: #174091;
+    line-height: 33px; }
+  .index-about .index-ab-more {
+    text-align: center;
+    padding-top: 50px; }
+    .index-about .index-ab-more a {
+      font-size: 16px;
+      display: inline-block;
+      border: 1px solid #173570;
+      color: #174091;
+      padding: 0 14px;
+      height: 46px;
+      line-height: 50px; }

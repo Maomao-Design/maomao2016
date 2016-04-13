@@ -50,3 +50,50 @@
         }
     }
 }
+
+
+// 公司健身
+.index-about{
+    
+    $co: #174091;
+    width: 730px;
+    min-height: 300px;    
+    .index-ab-title{
+        padding-top: 36px;
+        text-align: center;
+    }
+    
+   .index-ab-title2{
+       text-align: center;
+       padding-top: 30px;
+       span{
+           display: inline-block;
+           font-size: 24px;
+           padding: 5px 40px;
+           background: $co;
+           color: #FFF;
+       }
+   }
+   .index-ab-content{
+       p{
+            text-indent: 30px;
+            font-size: 16px;
+            color: $co;
+            line-height: 33px;
+       }
+     
+   }
+   .index-ab-more{
+       text-align: center;
+       padding-top: 50px;
+       a{  
+           font-size: 16px;
+           display: inline-block;
+           border: 1px solid #173570;
+           color: $co;
+           padding: 0 14px;
+           height: 46px;
+           line-height: 50px;
+       }
+   }
+}
