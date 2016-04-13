@@ -1,0 +1,37 @@
+/**
+* 2016年04月13日15:24:40
+* author Julian
+
+**/
+
+$color: #FFF;
+$colorHover: #f9d91c;
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+body,input,p,textarea{
+  font: 12px/1.5 "兰亭黑-简 纤黑",arial,'Hiragino Sans GB','Microsoft YaHei','\5FAE\8F6F\96C5\9ED1','微软雅黑','\5b8b\4f53',sans-serif;
+  -webkit-font-smoothing:antialiased; //让页面里的字体变清晰
+}
+ul,li,ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: $color;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.pstRe{
+    position: relative;
+}

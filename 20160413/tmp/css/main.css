@@ -1,15 +1,12 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+@charset "UTF-8";
+/* normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 html {
   font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 1 */ }
 
 /**
  * Remove the margin in all browsers (opinionated).
@@ -363,3 +360,163 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
+
+/**
+* 2016年04月13日15:24:40
+* author Julian
+
+**/
+* {
+  -webkit-font-smoothing: antialiased; }
+
+body, input, p, textarea {
+  font: 12px/1.5 "兰亭黑-简 纤黑",arial,'Hiragino Sans GB','Microsoft YaHei','\5FAE\8F6F\96C5\9ED1','微软雅黑','\5b8b\4f53',sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+ul, li, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #FFF; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.pstRe {
+  position: relative; }
+
+input, button, select, textarea {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+button {
+  border: none; }
+
+input {
+  border-radius: none;
+  -webkit-appearance: none;
+  border: 1px solid #CCC; }
+
+input:focus {
+  transition: border linear .2s,box-shadow linear .5s;
+  outline: none;
+  border-color: #f7da1c;
+  box-shadow: 0 0 2px #f7da1c; }
+
+.w {
+  width: 1200px; }
+
+.m-auto {
+  margin: 0 auto; }
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px; }
+  .header .logo {
+    display: inline-block; }
+    .header .logo a, .header .logo img {
+      display: block; }
+
+.nav {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px; }
+  .nav li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 140px;
+    position: relative; }
+    .nav li > a {
+      display: block;
+      font-size: 18px;
+      text-align: center; }
+      .nav li > a:hover {
+        color: #f9d91c; }
+    .nav li .nav-children {
+      display: none;
+      position: absolute;
+      width: 140px;
+      background-color: rgba(234, 235, 235, 0.6);
+      /* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+      text-align: center; }
+      .nav li .nav-children a {
+        font-size: 16px;
+        display: block;
+        padding: 6px 0;
+        color: #2b3e6a; }
+        .nav li .nav-children a:hover {
+          color: #f9d91c; }
+
+@media \0screen\,screen\9 {
+  /* 只支持IE6、7、8 */
+  .nav-children {
+    background-color: #000000;
+    filter: Alpha(opacity=50);
+    position: static;
+    /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom: 1;
+    /* 激活IE6、7的haslayout属性，让它读懂Alpha */ }
+  .nav-children a {
+    position: relative;
+    /* 设置子元素为相对定位，可让子元素不继承Alpha值 */ } }
+
+.banner-wrap {
+  height: 664px;
+  background: url(../images/banner.png) no-repeat center center;
+  background-size: cover; }
+
+.index-search-wrap {
+  padding: 88px 0; }
+  .index-search-wrap .index-search {
+    width: 450px;
+    height: 46px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; }
+    .index-search-wrap .index-search .search-key {
+      font-size: 14px;
+      border: 1px solid #DDD;
+      border-radius: 10px;
+      width: 366px;
+      height: 42px;
+      line-height: 46px;
+      text-indent: 16px;
+      padding-right: 80px; }
+    .index-search-wrap .index-search .index-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 77px;
+      height: 46px;
+      background: #174092 url(../images/icon-search.png) no-repeat center center; }
+
+.index-product-wrap {
+  height: 420px;
+  background: url(../images/index-main2-bg.png) no-repeat center center;
+  background-size: cover; }
+  .index-product-wrap .index-product {
+    width: 906px;
+    padding-top: 120px; }
+  .index-product-wrap .index-product-u {
+    position: relative;
+    height: 182px;
+    clear: both; }
+    .index-product-wrap .index-product-u li {
+      float: left;
+      width: 300px; }
+      .index-product-wrap .index-product-u li img {
+        max-width: 100%; }

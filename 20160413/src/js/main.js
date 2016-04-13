@@ -1,5 +1,5 @@
 ;(function () {
     D(function() {
-        console.log("Ss");
+    Log(new Date())
     })
 })()

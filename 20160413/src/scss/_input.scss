@@ -1,0 +1,23 @@
+
+
+input,button,select,textarea{
+   outline:none;
+}
+textarea{
+    resize:none;
+}
+button{
+    border: none;
+}
+input{
+    border-radius:none;
+    -webkit-appearance: none;
+    border: 1px solid #CCC;
+}
+input:focus{
+    transition:border linear .2s,box-shadow linear .5s;
+    outline:none;
+    border-color:rgba(247,218,28,1);
+    box-shadow:0 0 2px rgba(247,218,28,1);
+}
+
