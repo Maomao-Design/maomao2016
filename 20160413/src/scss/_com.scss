@@ -6,6 +6,7 @@
 
 $color: #FFF;
 $colorHover: #f9d91c;
+$colorBlue: #174091;
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -22,6 +23,10 @@ ul,li,ol{
 a{
     text-decoration: none;
     color: $color;
+    &:hover{
+        text-decoration: none;
+        color: $colorHover;
+    }
 }
 .fl{
     float: left;

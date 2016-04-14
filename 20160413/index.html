@@ -20,7 +20,8 @@
 <!--if lt IE 9]>
 　　<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
 <![endif]-->
-<link type="text/css" rel="stylesheet"  href="./build/css/app.css">
+<link href="./build/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="./build/css/app.css" type="text/css" rel="stylesheet"  >
 <link rel="dns-prefetch" href="">
 <script type="text/javascript" src="./build/js/app.js"></script>
 </head>
@@ -56,6 +57,22 @@
 </header>
 <!--banner-->
 <section class="banner-wrap">
+    <div class="fullSlide">
+        <div class="bd">
+            <ul>
+                <li _src="url(./build/images/banner.png)" ><a href=""></a></li>
+                <li _src="url(http://www.jq22.com/demo/jQuery-banner20160204/images/1.jpg)" ><a href=""></a></li>
+                <li _src="url(http://www.jq22.com/demo/jQuery-banner20160204/images/2.jpg)" ><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="hd"><ul></ul></div>
+        <div class="banner-content">
+            <img src="./build/images/banner-cont-1.png" alt="">
+            <a href="" class="url-btn">了解我们</a>
+        </div>
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
 </section>
 <!--banner end-->
 <!--search-->
@@ -104,14 +121,79 @@
             <img src="./build/images/index-about-pic.png" alt="">
         </div>
         <div class="index-ab-more">
-            <a href="" >了解更多</a>
+            <a href="" class="hvr-bounce-to-right">了解更多</a>
         </div>
     </div>
 </section>
 <!--about end -->
+<!--contact-->
+<section class="index-contact-wrap">
+    <div class="index-contact w m-auto">
+        <div class="index-ct-box-1">
+            <span class="icon-map icon-com"></span>
+            <p>
+                广州市花都区花东镇花北路9号花都 （国际） 
+                工程机械配件交易基地A2栋23-26号 
+            </p>
+            <p class="p2">
+                上海市江桥镇金园三路218号一号楼
+            </p>
+        </div>
+        <div class="index-ct-box-2">
+            <span class="icon-mail icon-com"></span>
+            <span>
+                <a href="mailto:shenghangseal@126.com">shenghangseal@126.com</a>
+            </span>
+           
+        </div>
+    </div>
+</section>
+<!--contact end-->
 <footer class="footer">
-    
+    <div class="footer-main m-auto">
+        <ul class="footer-u">
+            <li>
+                <h6 class="title">产品服务</h6>
+                <div class="childen">
+                    <a href="" >全部产品</a>
+                    <a href="" >在线定制</a>
+                    <a href="" >质保承诺</a>
+                    <a href="" >采购指南</a>
+                </div>
+            </li>
+            <li>
+                <h6 class="title">关于我们</h6>
+                <div class="childen">
+                    <a href="" >公司简介</a>
+                    <a href="" >企业资质</a>
+                    <a href="" >销售网络</a>
+                </div>
+            </li>
+            <li>
+                <h6 class="title">最新资讯</h6>
+                <div class="childen">
+                    <a href="" >公司新闻</a>
+                    <a href="" >行业动态</a>
+                </div>
+            </li>
+            <li>
+                <h6 class="title">联系我们</h6>
+                <div class="childen">
+                    <a href="" >广州公司</a>
+                    <a href="" >上海公司</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-cp">
+        版权所有©盛航密封技术有限公司    粤ICP备09018673号
+    </div>
 </footer>
+<div id="preloader">
+    <div class="inner">
+        <span class="loader"></span>
+    </div>
+</div>
 <!--[if lt IE 8]>
 <style>html,body{overflow:hidden;height:100%}</style>
 <div class="tb-ie-updater-layer"></div>

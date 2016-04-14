@@ -1,0 +1,21 @@
+.index-product-wrap{
+    height: 420px;
+    background: url(../images/index-main2-bg.png) no-repeat center center;
+    background-size: cover;
+    .index-product{
+        width: 906px;
+        padding-top: 120px;
+    }
+    .index-product-u{
+        position: relative;
+        height: 182px;
+        clear: both;
+        li{
+            float: left;
+            width: 300px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

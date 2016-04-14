@@ -133,7 +133,7 @@ gulp.task('dev', ['sass'], function() {
 gulp.task('watch', function() {
 
     // 看守.scss 档
-    gulp.watch('./'+ day +'/src/scss/*.scss', ['sass']);
+    gulp.watch(['./'+ day +'/src/scss/*.scss','./'+ day +'/src/scss/index/*.scss'], ['sass']);
     gulp.watch('./home/scss/*.scss', ['home']);
     // 看守所有.js档
     gulp.watch('./'+ day +'/*.js', ['scripts']);

@@ -12,8 +12,8 @@
             font-size: 14px;
             border:1px solid #DDD;
             border-radius: 10px;
-            width: 366px;
-            height: 42px;
+            width: 646px;
+            height: 46px;
             line-height: 46px;
             text-indent: 16px;
             padding-right: 80px;
@@ -24,76 +24,18 @@
             top: 0;
             width: 77px;
             height: 46px;
-            background: #174092 url(../images/icon-search.png) no-repeat center center;;
-        }
-    }
-}
-
-.index-product-wrap{
-    height: 420px;
-    background: url(../images/index-main2-bg.png) no-repeat center center;
-    background-size: cover;
-    .index-product{
-        width: 906px;
-        padding-top: 120px;
-    }
-    .index-product-u{
-        position: relative;
-        height: 182px;
-        clear: both;
-        li{
-            float: left;
-            width: 300px;
-            img{
-                max-width: 100%;
+            background: #174092 url(../images/icon-search.png) no-repeat center center;
+            &:hover{
+                background-color: #3262C1;
             }
         }
     }
 }
 
+ 
+@import 'indexPro';
+@import 'indexAbout';
+@import 'indexContact';
 
-// 公司健身
-.index-about{
-    
-    $co: #174091;
-    width: 730px;
-    min-height: 300px;    
-    .index-ab-title{
-        padding-top: 36px;
-        text-align: center;
-    }
-    
-   .index-ab-title2{
-       text-align: center;
-       padding-top: 30px;
-       span{
-           display: inline-block;
-           font-size: 24px;
-           padding: 5px 40px;
-           background: $co;
-           color: #FFF;
-       }
-   }
-   .index-ab-content{
-       p{
-            text-indent: 30px;
-            font-size: 16px;
-            color: $co;
-            line-height: 33px;
-       }
-     
-   }
-   .index-ab-more{
-       text-align: center;
-       padding-top: 50px;
-       a{  
-           font-size: 16px;
-           display: inline-block;
-           border: 1px solid #173570;
-           color: $co;
-           padding: 0 14px;
-           height: 46px;
-           line-height: 50px;
-       }
-   }
-}
+
+

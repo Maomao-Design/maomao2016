@@ -1,5 +1,111 @@
 .banner-wrap{
     height: 664px;
-    background: url(../images/banner.png) no-repeat center center;
-    background-size: cover;
+    background: url(../images/loading.svg) no-repeat center center;
+    background-size: 40px;
+    overflow: hidden;
+    
+    
+}
+
+
+.banner-content{
+    position: relative;
+    margin-top: -400px;
+    text-align: center;
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 90px;
+    }
+    .url-btn{
+        display: inline-block;
+        background: #f9d91c;
+        color: $colorBlue;
+        font-size: 16px;
+        padding: 5px 26px;
+        &:hover{
+            background-color: #fffdf3;
+        }
+    }
+}
+
+
+// banner 切换
+.fullSlide {
+    width: 100%;
+    position: relative;
+    height: 664px;
+    
+    .bd {
+        margin: 0 auto;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        ul {
+            width: 100% !important;
+        }
+        li {
+            width: 100% !important;
+            height: 664px;
+            overflow: hidden;
+            text-align: center;
+            background: center 0 no-repeat;
+            background-size: cover;
+            a {
+                display: block;
+                height: 664px;
+            }
+        }
+    }
+    
+    .hd{
+        margin-top: -30px;
+        ul {
+            text-align: right;
+            padding-right: 5%;
+            li {
+                cursor: pointer;
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                width: 15px;
+                height: 10px;
+                margin: 2px;
+                overflow: hidden;
+                border: 1px solid #e4e4e4;
+                filter: alpha(opacity=50);
+                opacity: 0.5;
+                line-height: 999px;
+            }
+            .on {
+                background: $colorHover;
+                border-color: $colorHover;
+            }
+        
+        }
+        
+    }
+    .prev,.next{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        margin-top: -22px;
+        left: 5%;
+        z-index: 1;
+        width: 44px;
+        height: 44px;
+        background: url(../images/banner_left.png) no-repeat;
+        cursor: pointer;
+        display: none;
+        opacity: .6;
+        &:hover{
+            opacity:  .1;
+        }
+    }
+    .next {
+        left: auto;
+        right: 5%;
+        background: url(../images/banner_right.png) no-repeat;
+    }
 }
