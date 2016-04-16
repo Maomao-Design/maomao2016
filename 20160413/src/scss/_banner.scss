@@ -1,5 +1,5 @@
 .banner-wrap{
-    height: 664px;
+   
     background: url(../images/loading.svg) no-repeat center center;
     background-size: 40px;
     overflow: hidden;
@@ -17,7 +17,9 @@
         margin: 0 auto;
         margin-bottom: 90px;
     }
-    .url-btn{
+    
+}
+.url-btn{
         display: inline-block;
         background: #f9d91c;
         color: $colorBlue;
@@ -26,9 +28,7 @@
         &:hover{
             background-color: #fffdf3;
         }
-    }
 }
-
 
 // banner 切换
 .fullSlide {
@@ -95,7 +95,7 @@
         z-index: 1;
         width: 44px;
         height: 44px;
-        background: url(../images/banner_left.png) no-repeat;
+       
         cursor: pointer;
         display: none;
         opacity: .6;
@@ -106,6 +106,6 @@
     .next {
         left: auto;
         right: 5%;
-        background: url(../images/banner_right.png) no-repeat;
+       
     }
 }

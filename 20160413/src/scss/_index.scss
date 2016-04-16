@@ -24,7 +24,9 @@
             top: 0;
             width: 77px;
             height: 46px;
-            background: #174092 url(../images/icon-search.png) no-repeat center center;
+            background: #174092;
+            vertical-align: middle;
+            line-height: 60px;
             &:hover{
                 background-color: #3262C1;
             }

@@ -17,6 +17,7 @@ var sass = require('gulp-sass'),
     reload      = browserSync.reload,
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
+    spritesmith = require('gulp.spritesmith');
     zip = require('gulp-zip');
 
 
@@ -94,7 +95,13 @@ gulp.task('homeHtml',function(){
 });
 
 
-
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('./'+ day +'/src/images/icon/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css'
+  }));
+  return spriteData.pipe(gulp.dest('./'+ day +'/build/css/'));
+});
 
 //zip
 gulp.task('zip', function () {

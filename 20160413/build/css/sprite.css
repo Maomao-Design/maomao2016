@@ -1,0 +1,72 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-address {
+  background-image: url(sprite.png);
+  background-position: -187px -53px;
+  width: 26px;
+  height: 32px;
+}
+.icon-fax {
+  background-image: url(sprite.png);
+  background-position: -27px -97px;
+  width: 26px;
+  height: 25px;
+}
+.icon-mail-on {
+  background-image: url(sprite.png);
+  background-position: -73px 0px;
+  width: 70px;
+  height: 53px;
+}
+.icon-mail {
+  background-image: url(sprite.png);
+  background-position: -143px 0px;
+  width: 70px;
+  height: 53px;
+}
+.icon-map {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 73px;
+  height: 97px;
+}
+.icon-next {
+  background-image: url(sprite.png);
+  background-position: -143px -53px;
+  width: 44px;
+  height: 44px;
+}
+.icon-phone {
+  background-image: url(sprite.png);
+  background-position: -117px -53px;
+  width: 26px;
+  height: 26px;
+}
+.icon-prev {
+  background-image: url(sprite.png);
+  background-position: -73px -53px;
+  width: 44px;
+  height: 44px;
+}
+.icon-search {
+  background-image: url(sprite.png);
+  background-position: 0px -97px;
+  width: 27px;
+  height: 25px;
+}
