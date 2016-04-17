@@ -1,0 +1,29 @@
+
+
+.about-banner-wrap{
+    height: 614px;
+    background: url(../images/about-banner-bg.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-banner{
+    text-align: center;
+    padding-top: 190px;
+    p{
+        
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+.about-main-wrap{
+    padding: 100px 0;
+    
+    background: url(../images/about-main-bg.png) no-repeat center bottom;
+    
+    p{
+        margin: 0;
+    }
+}

@@ -1,0 +1,19 @@
+
+$bg: #060e29;
+
+.product-banner{
+    height: 822px;
+    background: $bg url(../images/product-bg.png) no-repeat center center;
+    background-size: cover;
+    
+    .index-search-wrap{
+        padding-top: 273px;
+        padding-bottom: 0px;
+        .index-btn{
+            background-color: #eed01e;
+        }
+    }
+    .index-product{
+        padding-top: 180px;
+    }
+}

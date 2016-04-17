@@ -1,0 +1,68 @@
+.content-banner-wrap{
+    height: 1012px;
+    background: url(../images/content-bg.png) no-repeat center center;
+    background-size: cover;
+    color: #FFF;
+}
+
+.content-banner{
+    padding-top: 240px;
+    .title{
+        font-size: 24px;
+        text-align: center;
+        word-spacing:8px; 
+        letter-spacing: 3px;
+        height: 90px;
+        .sp1{
+            padding-left: 4px;
+             
+        }
+        .sp2{
+            font-family: "Myriad Pro Regular";
+            font-size: 22px;
+            border-bottom: 1px solid #FFF;
+            padding-bottom: 20px;
+        }
+    }
+    
+    .mail-wrap{
+        padding-top: 90px;
+        text-align: center;
+        padding-bottom: 80px;
+        a:hover{
+            i{
+                background-position: -73px 0px;
+            }
+        }
+        p{
+            padding-top: 36px;
+            font-size: 24px;
+        }
+    }
+    
+    .address-wrap{
+        border-top: 1px solid #FFF;
+        padding-top: 60px;
+        table{
+            width: 100%;
+            th{
+                font-size: 28px;
+                padding: 30px 0;
+            }
+            td{
+                width: 50%;
+                vertical-align: middle;
+                padding-bottom: 20px;
+                span{
+                    vertical-align: middle;
+                }
+                .fr{
+                    width: 300px;
+                }
+            }
+        }
+        .test{
+            padding-right: 100px;
+        }
+    }
+}
