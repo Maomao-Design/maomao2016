@@ -2288,13 +2288,8 @@ img.tp-slider-alternative-image {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .tparrows.preview2 {
-    min-width: 30px;
-    min-height: 30px;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px; }
+    width: 44px;
+    height: 44px; }
   .tparrows.preview2:after {
     position: absolute;
     top: 50%;
@@ -2314,13 +2309,8 @@ img.tp-slider-alternative-image {
 
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .tparrows.preview2 {
-    min-width: 30px;
-    min-height: 30px;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px; }
+    width: 44px;
+    height: 44px; }
   .tparrows.preview2:after {
     position: absolute;
     top: 50%;
@@ -2919,7 +2909,7 @@ img.tp-slider-alternative-image {
       font-size: 14px;
       border: 1px solid #DDD;
       border-radius: 10px;
-      width: 646px;
+      width: 446px;
       height: 46px;
       line-height: 46px;
       text-indent: 16px;
@@ -2932,7 +2922,9 @@ img.tp-slider-alternative-image {
       height: 46px;
       background: #174092;
       vertical-align: middle;
-      line-height: 60px; }
+      line-height: 60px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
       .index-search-wrap .index-search .index-btn:hover {
         background-color: #3262C1; }
 

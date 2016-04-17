@@ -1,16 +1,9 @@
-jQuery(document).ready(function() {
+DM(document).ready(function() {
 	var revapi;
 
+	DM(".fullwidthbanner ul , .fullscreenbanner ul").removeClass('hide');
 
-
-	// Make Content Visible
-	jQuery(".fullwidthbanner ul , .fullscreenbanner ul").removeClass('hide');
-
-
-	/**
-		@HALFSCREEN SLIDER
-	**/
-	if(jQuery(".fullwidthbanner").length > 0) {
+	if(DM(".fullwidthbanner").length > 0) {
 
 		// Default Thumbs [small]
 		var thumbWidth 			= 100,
@@ -21,15 +14,15 @@ jQuery(document).ready(function() {
 			navigationVOffset	= 10;
 
 		// Shadow
-		_shadow = jQuery(".fullwidthbanner").attr('data-shadow') || 0;
+		_shadow = DM(".fullwidthbanner").attr('data-shadow') || 0;
 
 		// Small Thumbnails
-		if(jQuery(".fullwidthbanner").hasClass('thumb-small')) {
+		if(DM(".fullwidthbanner").hasClass('thumb-small')) {
 			var navigationType 		= "thumb";
 		}
 		
 		// Large Thumbnails
-		if(jQuery(".fullwidthbanner").hasClass('thumb-large')) {
+		if(DM(".fullwidthbanner").hasClass('thumb-large')) {
 			var navigationType 		= "thumb";
 				thumbWidth 			= 195,
 				thumbHeight 		= 95,
@@ -39,30 +32,30 @@ jQuery(document).ready(function() {
 
 				// Hide thumbs on mobile - Avoid gaps
 				/**
-				if(jQuery(window).width() < 800) {
+				if(DM(window).width() < 800) {
 					setTimeout(function() {
 						var navigationVOffset = 10;
-						jQuery("div.tp-thumbs").addClass('hidden');
+						DM("div.tp-thumbs").addClass('hidden');
 					}, 100);
 				}
 				**/
 		}
 
 		// Init Revolution Slider
-		revapi = jQuery('.fullwidthbanner').revolution({
+		revapi = DM('.fullwidthbanner').revolution({
 			dottedOverlay:"none",
 			delay:9000,
 			startwidth:1170,
-			startheight: jQuery(".fullwidthbanner").attr('data-height') || 500,
+			startheight: DM(".fullwidthbanner").attr('data-height') || 500,
 			hideThumbs:hideThumbs,
 
 			thumbWidth:thumbWidth,
 			thumbHeight:thumbHeight,
-			thumbAmount: parseInt(jQuery(".fullwidthbanner ul li").length) || 2,
+			thumbAmount: parseInt(DM(".fullwidthbanner ul li").length) || 2,
 
 			navigationType:navigationType,
 			navigationArrows:navigationArrows,
-			navigationStyle:jQuery('.fullwidthbanner').attr('data-navigationStyle') || "round", // round,square,navbar,round-old,square-old,navbar-old (see docu - choose between 50+ different item)
+			navigationStyle:DM('.fullwidthbanner').attr('data-navigationStyle') || "round", // round,square,navbar,round-old,square-old,navbar-old (see docu - choose between 50+ different item)
 
 			touchenabled:"on",
 			onHoverStop:"on",
@@ -113,13 +106,5 @@ jQuery(document).ready(function() {
 		});
 
 	}
-
-
-	
-
-
-	
-		
-	
 
 });	

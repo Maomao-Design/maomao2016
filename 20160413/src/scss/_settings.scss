@@ -2509,13 +2509,10 @@ img.tp-slider-alternative-image {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.tparrows.preview2 {
-		min-width: 30px;
-		min-height: 30px;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-		-moz-border-radius: 15px;
-		-webkit-border-radius: 15px;
+		
+		width: 44px;
+		height: 44px;
+		
 	}
 
 	.tparrows.preview2:after {
@@ -2550,13 +2547,10 @@ img.tp-slider-alternative-image {
 
 @media only screen and (min-width: 0px) and (max-width: 479px) {
 	.tparrows.preview2 {
-		min-width: 30px;
-		min-height: 30px;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-		-moz-border-radius: 15px;
-		-webkit-border-radius: 15px;
+
+		width: 44px;
+		height: 44px;
+	
 	}
 
 	.tparrows.preview2:after {

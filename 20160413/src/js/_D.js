@@ -13,7 +13,7 @@ var
 	// A central reference to the root DM(document)
 	rootDM,
 
-	// Support: IE<9
+	// Support: IE<9 
 	// For `typeof node.method` instead of `node.method !== undefined`
 	core_strundefined = typeof undefined,
 
