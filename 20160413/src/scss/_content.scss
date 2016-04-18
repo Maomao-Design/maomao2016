@@ -43,6 +43,7 @@
     .address-wrap{
         border-top: 1px solid #FFF;
         padding-top: 60px;
+        font-size: 17px;
         table{
             width: 100%;
             th{
@@ -57,12 +58,12 @@
                     vertical-align: middle;
                 }
                 .fr{
-                    width: 300px;
+                    width: 320px;
                 }
             }
         }
         .test{
-            padding-right: 100px;
+            padding-right: 80px;
         }
     }
 }

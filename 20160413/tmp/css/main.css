@@ -5480,7 +5480,8 @@ img.tp-slider-alternative-image {
       font-size: 24px; }
   .content-banner .address-wrap {
     border-top: 1px solid #FFF;
-    padding-top: 60px; }
+    padding-top: 60px;
+    font-size: 17px; }
     .content-banner .address-wrap table {
       width: 100%; }
       .content-banner .address-wrap table th {
@@ -5493,9 +5494,9 @@ img.tp-slider-alternative-image {
         .content-banner .address-wrap table td span {
           vertical-align: middle; }
         .content-banner .address-wrap table td .fr {
-          width: 300px; }
+          width: 320px; }
     .content-banner .address-wrap .test {
-      padding-right: 100px; }
+      padding-right: 80px; }
 
 .footer {
   background: #f8f8f8; }
