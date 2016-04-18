@@ -17,6 +17,16 @@
         });
        
        
+       D(".aside-bar-wrap").on("click",".aside-top",function () {
+           var _t = D(this),
+               _Pr = _t.parents(".aside-bar-wrap");
+               
+               _Pr.find("li").removeClass("on");
+               _t.parent("li").addClass("on");
+               
+               Log(_Pr.text())
+       })
+       
        
     //    DM(".fullSlide").hover(function(){
     //         DM(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)

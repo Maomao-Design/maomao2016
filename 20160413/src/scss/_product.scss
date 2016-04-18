@@ -49,15 +49,27 @@ $bg: #060e29;
     min-height: 300px;
     background: #233762;
     color: #FFF;
-    padding-bottom: 30px;
+    padding-top: 20px;
     .columns-title{
         display: block;
         font-size: 22px;
         padding:10px;
+        padding-bottom: 20px;
+        position: relative;
         i{
             position: relative;
             font-size: 16px;
             top: -6px;
+        }
+        .bot{
+            position: absolute;
+            width: 32px;
+            height: 5px;
+            background: #FFF;
+            left: 10px;
+            bottom: 0px;
+            
+            
         }
     }
     
@@ -124,4 +136,22 @@ $bg: #060e29;
     img{
         max-width: 100%;
     }
+}
+
+// nok
+
+.nok-list-top{
+    height: 120px;
+    background: #233762 url(../images/paomiantu.png) no-repeat 70px center;
+    .nok-list-title{
+        padding-top: 56px;
+        font-size: 22px;
+        color: #f9d91c;
+        text-align: right;
+        padding-right: 70px;
+    }
+}
+.nok-list-wrap{
+    min-height: 1000px;
+    background: url(../images/bg-line.png) no-repeat top right;
 }
