@@ -5532,7 +5532,99 @@ img.tp-slider-alternative-image {
 
 .nok-list-wrap {
   min-height: 1000px;
+  padding: 0 70px;
+  padding-top: 20px;
   background: url(../images/bg-line.png) no-repeat top right; }
+
+.nok-list-main {
+  min-height: 200px; }
+  .nok-list-main .tb {
+    width: 100%;
+    font-size: 14px; }
+  .nok-list-main tr:hover .td1 {
+    background: #233762; }
+  .nok-list-main tr:hover .td2 {
+    background: #f5f5f5; }
+  .nok-list-main th, .nok-list-main td {
+    padding: 5px 0;
+    text-align: center; }
+  .nok-list-main th {
+    color: #FFF; }
+    .nok-list-main th.th1 {
+      background: #58595b; }
+    .nok-list-main th.th2 {
+      background: #8e9bcb; }
+  .nok-list-main td.td1 {
+    color: #FFF;
+    background: #8a8a8a; }
+    .nok-list-main td.td1 a:hover {
+      text-decoration: underline; }
+  .nok-list-main td.td2 {
+    color: #222;
+    background: #e5e5e5; }
+
+.nok-list-top {
+  height: 120px;
+  background: #233762 url(../images/paomiantu.png) no-repeat 70px center; }
+  .nok-list-top .nok-list-title {
+    padding-top: 56px;
+    font-size: 22px;
+    color: #f9d91c;
+    text-align: right;
+    padding-right: 70px; }
+
+.nok-list-wrap {
+  min-height: 1000px;
+  padding: 0 70px;
+  padding-top: 20px;
+  background: url(../images/bg-line.png) no-repeat top right; }
+
+.nok-list-main {
+  min-height: 200px; }
+  .nok-list-main .tb {
+    width: 100%;
+    font-size: 14px; }
+  .nok-list-main tr:hover .td1 {
+    background: #233762; }
+  .nok-list-main tr:hover .td2 {
+    background: #f5f5f5; }
+  .nok-list-main th, .nok-list-main td {
+    padding: 5px 0;
+    text-align: center; }
+  .nok-list-main th {
+    color: #FFF; }
+    .nok-list-main th.th1 {
+      background: #58595b; }
+    .nok-list-main th.th2 {
+      background: #8e9bcb; }
+  .nok-list-main td.td1 {
+    color: #FFF;
+    background: #8a8a8a; }
+    .nok-list-main td.td1 a:hover {
+      text-decoration: underline; }
+  .nok-list-main td.td2 {
+    color: #222;
+    background: #e5e5e5; }
+
+.paging-wrap {
+  height: 22px;
+  text-align: right;
+  margin-bottom: 20px; }
+  .paging-wrap .paging-num {
+    height: 22px;
+    line-height: 24px;
+    background: #233762;
+    color: #f9d91c;
+    text-align: center;
+    padding: 0 30px;
+    float: right;
+    font-size: 16px; }
+  .paging-wrap .next-btn {
+    float: right;
+    margin-left: 5px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/next.png) no-repeat center center; }
 
 .about-banner-wrap {
   height: 614px;
