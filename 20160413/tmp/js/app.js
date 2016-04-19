@@ -9634,6 +9634,18 @@ function Log(msg){
                Log(_Pr.text())
        })
        
+       D(".shouhou-tab-nav").on("click","a",function(){
+           var _t = D(this),
+               _i = _t.attr("data-t");
+               
+               D(".shouhou-tab-nav a").removeClass("on");
+               
+               _t.addClass("on");
+               
+               D(".shouhou-tab-main div").hide();
+               
+               D(".shouhou-tab-"+_i).show();
+       })
        
     //    DM(".fullSlide").hover(function(){
     //         DM(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)

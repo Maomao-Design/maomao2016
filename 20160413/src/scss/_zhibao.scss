@@ -6,12 +6,21 @@
     height: 576px;
     background: url(../images/zhibao-banner-bg.png) no-repeat center center;
     background-size: cover;
-    
+    position: relative;
     .zhibao-banner{
         text-align: center;
         padding-top: 280px;
         font-size: 48px;
         color: #FFF;
+    }
+    .zhibao-banner-line{
+        position: absolute;
+        width: 210px;
+        height: 2px;
+        background-color: #FFF;
+        left: 50%;
+        bottom: 76px;
+        margin-left: -105px;
     }
 }
 
@@ -84,7 +93,21 @@
 }
 
 .zhibao-shouhou-fuwu{
+    position: relative;
     padding-top: 86px;
+    
+    .top-sanjiao{
+        position: absolute;
+        width:0; 
+        height:0; 
+        border-left:30px solid transparent;
+        border-right:30px solid transparent;
+        border-bottom:30px solid #192649;
+        left: 50%;
+        top: -30px;
+        margin-left: -30px;
+    }
+    
     .title,.title-en{     
         color: #fff;
         text-align: center;
@@ -101,7 +124,72 @@
         letter-spacing: 10px;
         padding-bottom: 50px;
         text-transform:uppercase;
+    } 
+    
+}
+
+.shouhou-tab-wrap{
+    
+    
+    .shouhou-tab-nav{
+        height: 94px;
+        width: 1200px;
+        a{
+            display: inline-block;
+            width: 94px;
+            height: 94px;
+            margin-right: 160px;
+            span{
+                display: inline-block;
+                width: 94px;
+                height: 94px;
+                background-repeat:  no-repeat;
+                background-position: center center;
+            }
+            .icon-1{
+                background-image: url(../images/setting.png)
+             }
+             .icon-2{
+                background-image: url(../images/time.png)
+             }
+             .icon-3{
+                background-image: url(../images/fix.png)
+             }
+             .icon-4{
+                background-image: url(../images/service.png)
+             }
+             &.on{
+                 .icon-1{
+                    background-image: url(../images/setting-on.png)
+                }
+                .icon-2{
+                    background-image: url(../images/time-on.png)
+                }
+                .icon-3{
+                    background-image: url(../images/fix-on.png)
+                }
+                .icon-4{
+                    background-image: url(../images/service-on.png)
+                }
+             }
+        }
     }
     
     
+    .shouhou-tab-main{
+       color: #FFF;
+       text-align: center;
+       font-size: 24px;
+       div{
+           display: none;
+           padding-top: 30px;
+       }
+       table{
+           width: 100%;
+           td{
+               height: 370px;
+               vertical-align: middle;
+           }
+       }
+    }
 }

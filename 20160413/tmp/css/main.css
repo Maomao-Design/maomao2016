@@ -5563,49 +5563,6 @@ img.tp-slider-alternative-image {
     color: #222;
     background: #e5e5e5; }
 
-.nok-list-top {
-  height: 120px;
-  background: #233762 url(../images/paomiantu.png) no-repeat 70px center; }
-  .nok-list-top .nok-list-title {
-    padding-top: 56px;
-    font-size: 22px;
-    color: #f9d91c;
-    text-align: right;
-    padding-right: 70px; }
-
-.nok-list-wrap {
-  min-height: 1000px;
-  padding: 0 70px;
-  padding-top: 20px;
-  background: url(../images/bg-line.png) no-repeat top right; }
-
-.nok-list-main {
-  min-height: 200px; }
-  .nok-list-main .tb {
-    width: 100%;
-    font-size: 14px; }
-  .nok-list-main tr:hover .td1 {
-    background: #233762; }
-  .nok-list-main tr:hover .td2 {
-    background: #f5f5f5; }
-  .nok-list-main th, .nok-list-main td {
-    padding: 5px 0;
-    text-align: center; }
-  .nok-list-main th {
-    color: #FFF; }
-    .nok-list-main th.th1 {
-      background: #58595b; }
-    .nok-list-main th.th2 {
-      background: #8e9bcb; }
-  .nok-list-main td.td1 {
-    color: #FFF;
-    background: #8a8a8a; }
-    .nok-list-main td.td1 a:hover {
-      text-decoration: underline; }
-  .nok-list-main td.td2 {
-    color: #222;
-    background: #e5e5e5; }
-
 .nok-show-wrap {
   background: #f8f8f8;
   padding: 44px 0; }
@@ -5839,12 +5796,21 @@ img.tp-slider-alternative-image {
 .zhibao-banner-wrap {
   height: 576px;
   background: url(../images/zhibao-banner-bg.png) no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .zhibao-banner-wrap .zhibao-banner {
     text-align: center;
     padding-top: 280px;
     font-size: 48px;
     color: #FFF; }
+  .zhibao-banner-wrap .zhibao-banner-line {
+    position: absolute;
+    width: 210px;
+    height: 2px;
+    background-color: #FFF;
+    left: 50%;
+    bottom: 76px;
+    margin-left: -105px; }
 
 .zhibao-fuwu-nuo {
   padding-top: 86px;
@@ -5890,7 +5856,18 @@ img.tp-slider-alternative-image {
   background-size: cover; }
 
 .zhibao-shouhou-fuwu {
+  position: relative;
   padding-top: 86px; }
+  .zhibao-shouhou-fuwu .top-sanjiao {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #192649;
+    left: 50%;
+    top: -30px;
+    margin-left: -30px; }
   .zhibao-shouhou-fuwu .title, .zhibao-shouhou-fuwu .title-en {
     color: #fff;
     text-align: center; }
@@ -5904,6 +5881,50 @@ img.tp-slider-alternative-image {
     letter-spacing: 10px;
     padding-bottom: 50px;
     text-transform: uppercase; }
+
+.shouhou-tab-wrap .shouhou-tab-nav {
+  height: 94px;
+  width: 1200px; }
+  .shouhou-tab-wrap .shouhou-tab-nav a {
+    display: inline-block;
+    width: 94px;
+    height: 94px;
+    margin-right: 160px; }
+    .shouhou-tab-wrap .shouhou-tab-nav a span {
+      display: inline-block;
+      width: 94px;
+      height: 94px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .shouhou-tab-wrap .shouhou-tab-nav a .icon-1 {
+      background-image: url(../images/setting.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a .icon-2 {
+      background-image: url(../images/time.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a .icon-3 {
+      background-image: url(../images/fix.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a .icon-4 {
+      background-image: url(../images/service.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a.on .icon-1 {
+      background-image: url(../images/setting-on.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a.on .icon-2 {
+      background-image: url(../images/time-on.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a.on .icon-3 {
+      background-image: url(../images/fix-on.png); }
+    .shouhou-tab-wrap .shouhou-tab-nav a.on .icon-4 {
+      background-image: url(../images/service-on.png); }
+
+.shouhou-tab-wrap .shouhou-tab-main {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px; }
+  .shouhou-tab-wrap .shouhou-tab-main div {
+    display: none;
+    padding-top: 30px; }
+  .shouhou-tab-wrap .shouhou-tab-main table {
+    width: 100%; }
+    .shouhou-tab-wrap .shouhou-tab-main table td {
+      height: 370px;
+      vertical-align: middle; }
 
 .footer {
   background: #f8f8f8; }
