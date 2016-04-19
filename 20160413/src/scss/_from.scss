@@ -1,0 +1,108 @@
+// 在线提交
+
+.from-wrap{
+    width: 100%;
+    height: 1021px;
+    background: url(../images/from-bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.from-box{
+    padding-top: 208px;
+}
+
+.from-main{
+    width: 774px;
+    
+    
+    .from-bo{
+        padding: 16px;
+        background: #fff;
+    }
+    .from-nav{
+        clear: both;
+        overflow: hidden;
+        a{
+            color: #174091;
+            font-size: 28px;
+            line-height: 60px;
+            width: 50%;
+            height: 60px;
+            float: left;
+            text-align: center;
+            &.on{
+                background: #174091;
+                color: #fff;
+            }
+        }
+    }
+    
+    .from-lab-box{
+        position: relative;
+        li{
+            height: 43px;
+            line-height: 43px;
+            padding-left: 20px;
+            .s1{
+               display: inline-block;
+               width: 96px; 
+               font-size: 14px;
+               color: #174091;
+            }
+            &.li1{
+                background: #f8f8f8;
+            }
+        }
+        input{
+            height: 36px;
+            font-size: 14px;
+            background-color: transparent;
+            width: 610px;
+            border: none;
+        }
+    }
+    .from-p{
+        font-size: 14px;
+        color: #666;
+        padding: 10px;
+        text-indent: 38px;
+    }
+    .textarea-box{
+        .textarea{
+            width: 100%;
+            height: 110px;
+            border: 1px solid #174091;
+            text-indent: 20px;
+        }
+        
+    }
+    
+}
+
+.from-btn-wrap{
+    text-align: center;
+    padding-top: 36px;
+    input{
+        width: 142px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        font-size: 18px;
+        border: none;
+        margin: 0 40px;
+    }
+    .submit-btn{
+        color: #FFF;
+        background: #174091;
+        &:hover{
+            background: #113886;
+        }
+    }
+    .clear-btn{
+        color: #174091;
+        background: #f9d91c;
+        &:hover{
+            background: #DCC01A;
+        }
+    }
+}

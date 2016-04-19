@@ -1,0 +1,107 @@
+/**
+    质保承诺
+**/
+
+.zhibao-banner-wrap{
+    height: 576px;
+    background: url(../images/zhibao-banner-bg.png) no-repeat center center;
+    background-size: cover;
+    
+    .zhibao-banner{
+        text-align: center;
+        padding-top: 280px;
+        font-size: 48px;
+        color: #FFF;
+    }
+}
+
+.zhibao-fuwu-nuo{
+    padding-top: 86px;
+    padding-bottom: 100px;
+    .title,.title-en{     
+        color: #174091;
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 28px;
+        color: #174091;
+        word-spacing:8px; 
+        letter-spacing: 10px;
+        text-transform:uppercase;
+    }
+    .title-en{
+        font-size: 36px;
+        word-spacing:2px; 
+        letter-spacing: 10px;
+        padding-bottom: 50px;
+    }
+    
+    
+    .fuwu-readme-wrap{
+        
+        .fuwu-pic-wrap{
+            width: 400px;
+            height: 300px;
+            float: left;
+            
+        }
+        .fuwu-text-wrap{
+            width: 450px;
+            float: right;
+            font-size: 18px;
+            color: #174091;
+            .text-title{
+                text-align: center;
+               
+                height: 30px;
+                line-height: 30px;
+                
+                background: #f9d91c;
+                text-transform:uppercase;
+            }
+            .m-text{
+                padding-top: 10px;
+                p{
+                    font-size: 18px;
+                    padding-top: 10px;
+                }
+            }
+            
+        }
+        
+    }
+    
+    
+}
+
+
+//售后服务
+.zhibao-shouhou-fuwu-wrap{
+    height: 750px;
+    background: url(../images/shouhou-bg-1.png) no-repeat center center;
+    background-size: cover;
+}
+
+.zhibao-shouhou-fuwu{
+    padding-top: 86px;
+    .title,.title-en{     
+        color: #fff;
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 28px;       
+        word-spacing:8px; 
+        letter-spacing: 10px;
+    }
+    .title-en{
+        font-size: 36px;
+        word-spacing:2px; 
+        letter-spacing: 10px;
+        padding-bottom: 50px;
+        text-transform:uppercase;
+    }
+    
+    
+}

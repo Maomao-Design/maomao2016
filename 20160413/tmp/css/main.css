@@ -5606,6 +5606,145 @@ img.tp-slider-alternative-image {
     color: #222;
     background: #e5e5e5; }
 
+.nok-show-wrap {
+  background: #f8f8f8;
+  padding: 44px 0; }
+  .nok-show-wrap .img-show {
+    overflow: hidden; }
+    .nok-show-wrap .img-show img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; }
+  .nok-show-wrap .nok-parameter {
+    min-height: 200px;
+    background: forestgreen; }
+
+.nok-parameter-wrap {
+  padding: 30px 70px 20px 70px; }
+
+.nok-parameter .title {
+  height: 36px;
+  line-height: 36px;
+  color: #f9d91c;
+  font-size: 22px;
+  text-align: center;
+  background: #233762; }
+
+.nok-parameter .tb {
+  width: 100%;
+  font-size: 16px; }
+  .nok-parameter .tb .td1 {
+    width: 134px;
+    padding: 4px 0;
+    line-height: 23px;
+    background: #aeaeae;
+    color: #fff;
+    text-align: center; }
+  .nok-parameter .tb .td2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #e7e7e7;
+    color: #222; }
+
+.simrit-top {
+  height: 120px;
+  background: #f9d91c url(../images/paomiantu-si.png) no-repeat 70px center; }
+  .simrit-top .title {
+    padding-top: 56px;
+    font-size: 22px;
+    color: #233762;
+    text-align: right;
+    padding-right: 70px; }
+
+.simrit-show-wrap {
+  min-height: 300px;
+  background: #f8f8f8 url(../images/bg-line-simrit.png) no-repeat top right;
+  padding: 36px 96px; }
+
+.simrit-show-box {
+  min-height: 200px;
+  overflow: hidden; }
+
+.from-wrap {
+  width: 100%;
+  height: 1021px;
+  background: url(../images/from-bg.png) no-repeat center center;
+  background-size: cover; }
+
+.from-box {
+  padding-top: 208px; }
+
+.from-main {
+  width: 774px; }
+  .from-main .from-bo {
+    padding: 16px;
+    background: #fff; }
+  .from-main .from-nav {
+    clear: both;
+    overflow: hidden; }
+    .from-main .from-nav a {
+      color: #174091;
+      font-size: 28px;
+      line-height: 60px;
+      width: 50%;
+      height: 60px;
+      float: left;
+      text-align: center; }
+      .from-main .from-nav a.on {
+        background: #174091;
+        color: #fff; }
+  .from-main .from-lab-box {
+    position: relative; }
+    .from-main .from-lab-box li {
+      height: 43px;
+      line-height: 43px;
+      padding-left: 20px; }
+      .from-main .from-lab-box li .s1 {
+        display: inline-block;
+        width: 96px;
+        font-size: 14px;
+        color: #174091; }
+      .from-main .from-lab-box li.li1 {
+        background: #f8f8f8; }
+    .from-main .from-lab-box input {
+      height: 36px;
+      font-size: 14px;
+      background-color: transparent;
+      width: 610px;
+      border: none; }
+  .from-main .from-p {
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    text-indent: 38px; }
+  .from-main .textarea-box .textarea {
+    width: 100%;
+    height: 110px;
+    border: 1px solid #174091;
+    text-indent: 20px; }
+
+.from-btn-wrap {
+  text-align: center;
+  padding-top: 36px; }
+  .from-btn-wrap input {
+    width: 142px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    margin: 0 40px; }
+  .from-btn-wrap .submit-btn {
+    color: #FFF;
+    background: #174091; }
+    .from-btn-wrap .submit-btn:hover {
+      background: #113886; }
+  .from-btn-wrap .clear-btn {
+    color: #174091;
+    background: #f9d91c; }
+    .from-btn-wrap .clear-btn:hover {
+      background: #DCC01A; }
+
 .paging-wrap {
   height: 22px;
   text-align: right;
@@ -5693,6 +5832,78 @@ img.tp-slider-alternative-image {
           width: 320px; }
     .content-banner .address-wrap .test {
       padding-right: 80px; }
+
+/**
+    质保承诺
+**/
+.zhibao-banner-wrap {
+  height: 576px;
+  background: url(../images/zhibao-banner-bg.png) no-repeat center center;
+  background-size: cover; }
+  .zhibao-banner-wrap .zhibao-banner {
+    text-align: center;
+    padding-top: 280px;
+    font-size: 48px;
+    color: #FFF; }
+
+.zhibao-fuwu-nuo {
+  padding-top: 86px;
+  padding-bottom: 100px; }
+  .zhibao-fuwu-nuo .title, .zhibao-fuwu-nuo .title-en {
+    color: #174091;
+    text-align: center; }
+  .zhibao-fuwu-nuo .title {
+    font-size: 28px;
+    color: #174091;
+    word-spacing: 8px;
+    letter-spacing: 10px;
+    text-transform: uppercase; }
+  .zhibao-fuwu-nuo .title-en {
+    font-size: 36px;
+    word-spacing: 2px;
+    letter-spacing: 10px;
+    padding-bottom: 50px; }
+  .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-pic-wrap {
+    width: 400px;
+    height: 300px;
+    float: left; }
+  .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-text-wrap {
+    width: 450px;
+    float: right;
+    font-size: 18px;
+    color: #174091; }
+    .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-text-wrap .text-title {
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+      background: #f9d91c;
+      text-transform: uppercase; }
+    .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-text-wrap .m-text {
+      padding-top: 10px; }
+      .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-text-wrap .m-text p {
+        font-size: 18px;
+        padding-top: 10px; }
+
+.zhibao-shouhou-fuwu-wrap {
+  height: 750px;
+  background: url(../images/shouhou-bg-1.png) no-repeat center center;
+  background-size: cover; }
+
+.zhibao-shouhou-fuwu {
+  padding-top: 86px; }
+  .zhibao-shouhou-fuwu .title, .zhibao-shouhou-fuwu .title-en {
+    color: #fff;
+    text-align: center; }
+  .zhibao-shouhou-fuwu .title {
+    font-size: 28px;
+    word-spacing: 8px;
+    letter-spacing: 10px; }
+  .zhibao-shouhou-fuwu .title-en {
+    font-size: 36px;
+    word-spacing: 2px;
+    letter-spacing: 10px;
+    padding-bottom: 50px;
+    text-transform: uppercase; }
 
 .footer {
   background: #f8f8f8; }
