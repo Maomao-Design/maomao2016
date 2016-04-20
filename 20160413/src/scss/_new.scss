@@ -1,0 +1,59 @@
+
+.news-lsit-top{
+    height: 120px;
+    background: #f9d91c url(../images/paomiantu-si.png) no-repeat 70px center;
+    .title{
+        padding-top: 56px;
+        font-size: 22px;
+        color: #233762;
+        text-align: right;
+        padding-right: 70px;
+    }
+}
+
+.news-lsit-wrap{
+    padding: 20px 70px;
+    background: #FFF;
+}
+
+.news-list-main{
+   position: relative;
+   padding-bottom: 20px;
+   li{
+       height: 30px;
+       line-height: 30px;
+       border-bottom: 1px dotted #CCC;
+       padding: 0 10px;
+       &:hover{
+           background: #233762;
+           
+           a{
+               color: #fff;
+           }
+       }
+       a{
+           color: #444;
+           text-decoration: none;
+           display: block;
+           font-size: 14px;
+       }
+   }
+}
+
+
+.new-show-wrap{
+    background: #FFF;
+    .show-title{
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        background: #233762;
+        text-align: center;
+        color: #FFF;
+    }
+    .show-body{
+        padding: 20px;
+    }
+}
+ 

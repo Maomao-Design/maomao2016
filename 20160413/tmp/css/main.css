@@ -6039,6 +6039,51 @@ img.tp-slider-alternative-image {
 .caigou-show-body {
   padding-top: 50px; }
 
+.news-lsit-top {
+  height: 120px;
+  background: #f9d91c url(../images/paomiantu-si.png) no-repeat 70px center; }
+  .news-lsit-top .title {
+    padding-top: 56px;
+    font-size: 22px;
+    color: #233762;
+    text-align: right;
+    padding-right: 70px; }
+
+.news-lsit-wrap {
+  padding: 20px 70px;
+  background: #FFF; }
+
+.news-list-main {
+  position: relative;
+  padding-bottom: 20px; }
+  .news-list-main li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted #CCC;
+    padding: 0 10px; }
+    .news-list-main li:hover {
+      background: #233762; }
+      .news-list-main li:hover a {
+        color: #fff; }
+    .news-list-main li a {
+      color: #444;
+      text-decoration: none;
+      display: block;
+      font-size: 14px; }
+
+.new-show-wrap {
+  background: #FFF; }
+  .new-show-wrap .show-title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #233762;
+    text-align: center;
+    color: #FFF; }
+  .new-show-wrap .show-body {
+    padding: 20px; }
+
 .footer {
   background: #f8f8f8; }
 
