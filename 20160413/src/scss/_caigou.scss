@@ -24,12 +24,17 @@
         word-spacing:8px; 
         letter-spacing: 10px;
         text-transform: uppercase;
+        span{
+            display: inline-block;
+            padding-bottom: 26px;
+            border-bottom: 1px solid #FFF;
+        }
     }
     p{
         line-height: 36px;
     }
     .p1{
-        padding-top: 20px;
+        padding-top: 40px;
         font-size: 22px;
         font-weight: 700;
     }
@@ -47,6 +52,7 @@
    padding: 82px 0 110px 0;
   .title{
    font-size: 24px;
+   padding-bottom: 10px;
   }
   .title-en{
       font-size: 36px;
@@ -57,12 +63,87 @@
 }
 
 // tab
+
+$caiTH: 204px;
+
 .caigou-top-tab-wrap{
-    height: 204px;
+    height: $caiTH;
     background: #252b4c;
 }
 
 .caigou-top-tab{
     position: relative;
+    .sline{
+        position: absolute;
+        width: 1px;
+        height: 100px;
+        background: #FFF;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+    }
+}
+
+.caigou-top-tab-nav{
+    position: relative;
+    width: 50%;
+    height: $caiTH;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 24px;
+    .tab-sanjiao{
+        display: none;
+        position: absolute;
+        width:0; 
+        height:0; 
+        border-left:30px solid transparent;
+        border-right:30px solid transparent;
+        border-bottom:30px solid #252B4C;
+        left: 50%;
+        top: -20px;
+        margin-left: -30px;
+    }
+    &.on{
+        color: #f9d91c;
+        .tab-sanjiao{
+            display: block;
+        }
+    }
+    .tb{
+        width: 100%;
+    }
+    td{
+        height: $caiTH;
+        text-align: center;
+        vertical-align: middle;
+    }
     
+}
+
+
+.caigou-title-nav-wrap{
+    $th:76px;
+    height: $th;
+    background: #dbdbdb;
+    color: #888888;
+    text-align: center;
+    font-size: 18px;
+    .title-nav-a{
+        display: inline-block;
+        height: $th;
+        line-height: $th;
+        margin: 0 24px;
+        color: #888888;
+        &:hover{
+            color: #174091;
+        }
+    }
+}
+
+
+.caigou-show-body-wrap{
+    width: 100%;
+}
+.caigou-show-body{
+    padding-top: 50px;
 }

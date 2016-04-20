@@ -5730,9 +5730,9 @@ img.tp-slider-alternative-image {
 
 .about-banner {
   text-align: center;
-  padding-top: 190px; }
+  padding: 190px 20px 0 20px; }
   .about-banner img {
-    max-width: 100%; }
+    max-width: 96%; }
 
 .about-main-wrap {
   padding: 100px 0;
@@ -5946,10 +5946,14 @@ img.tp-slider-alternative-image {
     word-spacing: 8px;
     letter-spacing: 10px;
     text-transform: uppercase; }
+    .caigou-banner .title-en span {
+      display: inline-block;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #FFF; }
   .caigou-banner p {
     line-height: 36px; }
   .caigou-banner .p1 {
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 22px;
     font-weight: 700; }
   .caigou-banner .p2, .caigou-banner .p3 {
@@ -5962,7 +5966,8 @@ img.tp-slider-alternative-image {
   text-align: center;
   padding: 82px 0 110px 0; }
   .caigou-xuanxing .title {
-    font-size: 24px; }
+    font-size: 24px;
+    padding-bottom: 10px; }
   .caigou-xuanxing .title-en {
     font-size: 36px;
     word-spacing: 8px;
@@ -5975,6 +5980,64 @@ img.tp-slider-alternative-image {
 
 .caigou-top-tab {
   position: relative; }
+  .caigou-top-tab .sline {
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background: #FFF;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px; }
+
+.caigou-top-tab-nav {
+  position: relative;
+  width: 50%;
+  height: 204px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 24px; }
+  .caigou-top-tab-nav .tab-sanjiao {
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #252B4C;
+    left: 50%;
+    top: -20px;
+    margin-left: -30px; }
+  .caigou-top-tab-nav.on {
+    color: #f9d91c; }
+    .caigou-top-tab-nav.on .tab-sanjiao {
+      display: block; }
+  .caigou-top-tab-nav .tb {
+    width: 100%; }
+  .caigou-top-tab-nav td {
+    height: 204px;
+    text-align: center;
+    vertical-align: middle; }
+
+.caigou-title-nav-wrap {
+  height: 76px;
+  background: #dbdbdb;
+  color: #888888;
+  text-align: center;
+  font-size: 18px; }
+  .caigou-title-nav-wrap .title-nav-a {
+    display: inline-block;
+    height: 76px;
+    line-height: 76px;
+    margin: 0 24px;
+    color: #888888; }
+    .caigou-title-nav-wrap .title-nav-a:hover {
+      color: #174091; }
+
+.caigou-show-body-wrap {
+  width: 100%; }
+
+.caigou-show-body {
+  padding-top: 50px; }
 
 .footer {
   background: #f8f8f8; }
