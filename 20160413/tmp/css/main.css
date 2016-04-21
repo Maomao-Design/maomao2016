@@ -6084,6 +6084,59 @@ img.tp-slider-alternative-image {
   .new-show-wrap .show-body {
     padding: 20px; }
 
+.product-solist-banner {
+  min-height: 52px;
+  background: #060e29 url(../images/product-bg.png) no-repeat center center;
+  background-size: cover; }
+  .product-solist-banner .index-search-wrap {
+    padding-top: 273px;
+    padding-bottom: 0px;
+    margin-bottom: 60px; }
+    .product-solist-banner .index-search-wrap .index-btn {
+      background-color: #eed01e; }
+  .product-solist-banner .index-product {
+    padding-top: 180px; }
+
+.so-list-wrap {
+  padding-bottom: 50px;
+  background: #FFF; }
+
+.so-list-box {
+  position: relative;
+  padding-top: 30px; }
+  .so-list-box .so-list-nav {
+    text-align: center; }
+    .so-list-box .so-list-nav a {
+      font-size: 14px;
+      display: inline-block;
+      padding: 5px 20px;
+      background: #3262C1;
+      margin: 0 20px; }
+      .so-list-box .so-list-nav a.on {
+        background: #eed01e; }
+        .so-list-box .so-list-nav a.on:hover {
+          color: #FFF; }
+
+.so-list-main {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .so-list-main li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border-bottom: 1px solid #5EA1DA;
+    margin-bottom: 10px; }
+    .so-list-main li:hover {
+      border-color: #eed01e; }
+      .so-list-main li:hover a {
+        color: #eed01e; }
+    .so-list-main li a {
+      display: block;
+      color: #174092; }
+      .so-list-main li a span {
+        float: right; }
+
 .footer {
   background: #f8f8f8; }
 
