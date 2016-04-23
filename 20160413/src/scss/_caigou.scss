@@ -108,6 +108,9 @@ $caiTH: 204px;
         .tab-sanjiao{
             display: block;
         }
+        a{
+            color: #f9d91c;
+        }
     }
     .tb{
         width: 100%;
@@ -123,7 +126,7 @@ $caiTH: 204px;
 
 .caigou-title-nav-wrap{
     $th:76px;
-    height: $th;
+    // height: $th;
     background: #dbdbdb;
     color: #888888;
     text-align: center;
@@ -136,6 +139,9 @@ $caiTH: 204px;
         color: #888888;
         &:hover{
             color: #174091;
+        }
+        &.on{
+            color:#174091;
         }
     }
 }

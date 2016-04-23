@@ -10095,7 +10095,7 @@ function Log(msg){
      
  }
  
- 
+ // 打字特效
  function  typewriter(d){
      if(d.length > 0){
 				var c = d.html(),
@@ -10118,7 +10118,53 @@ function Log(msg){
             }
  }
 
+// 获取模块数控
+function getIdDate(md,mo,id,call){
+    var query = 'list action=module module='+ mo +' id='+ id;
+     getDataCom(md,query,function(data){
+        call(data);
+    });
+
+}
+
+function getCatIdList(md,mo,catid,call){
+    var query = 'list action=module module='+ mo +' catid='+ catid +' order=updatetime num=50';
+    getDataCom(md,query,function(data){
+        call(data);
+    });
+}
+
+function getDataCom(md,query,call){
     
+    var _url = '{SITE_URL}index.php?c=api&m=data2&format=jsonp&auth='+md+'&param='+ query;
+
+    D.ajax(
+        {
+            type:'get',
+            url : _url,
+            dataType : 'jsonp',
+            success  : function(data) {
+                 call(data);
+            },
+            error : function(data) {
+                call(false);
+            }
+        }
+    );
+}
+
+function  loaderHtml(ele){
+        
+        var str = '<div class="loader">'+
+            '<div class="loader-inner ball-clip-rotate-multiple">'+
+            '<div></div>'+
+            '<div></div>'+
+            '</div>'+
+        '</div>';
+        
+        ele.html(str);
+        
+ }
 
 ;(function () {
     D(function() {
