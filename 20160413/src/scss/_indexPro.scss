@@ -1,4 +1,7 @@
 .index-product-wrap{
+    perspective: 1px; 
+    transform-style: preserve-3d;
+    transform: translate3D(-50%, -120px, -1px) scale(2);
     height: 420px;
     background: url(../images/index-main2-bg.png) no-repeat center center;
     background-size: cover;
@@ -15,9 +18,24 @@
         li{
             float: left;
             width: 300px;
+            
             img{
+                -ms-transition:.2s;
+                -moz-transition:.2s;
+                -webkit-transition:.2s;
+                transition:.2s;
                 max-width: 100%;
             }
+            &:hover{
+                img{
+                    -ms-transform:scale(1.2);
+                    -moz-transform:scale(1.2);
+                    -webkit-transform:scale(1.2);
+                    transform:scale(1.2);
+                    
+                }
+            }
+            
         }
         }
     }

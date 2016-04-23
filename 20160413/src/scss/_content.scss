@@ -1,6 +1,6 @@
 .content-banner-wrap{
     height: 1012px;
-    background: url(../images/content-bg.png) no-repeat center center;
+    background: #233762 url(../images/content-bg.png) no-repeat center center;
     background-size: cover;
     color: #FFF;
 }
@@ -14,7 +14,7 @@
         letter-spacing: 3px;
         height: 90px;
         .sp1{
-            padding-left: 4px;
+            padding-left: 15px;
              
         }
         .sp2{
@@ -36,19 +36,20 @@
         }
         p{
             padding-top: 36px;
-            font-size: 24px;
+            font-size: 18px;
         }
     }
     
     .address-wrap{
         border-top: 1px solid #FFF;
         padding-top: 60px;
-        font-size: 17px;
+        font-size: 14px;
         table{
             width: 100%;
             th{
-                font-size: 28px;
+                font-size: 20px;
                 padding: 30px 0;
+                font-weight: 400;
             }
             td{
                 width: 50%;

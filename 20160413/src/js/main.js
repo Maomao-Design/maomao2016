@@ -27,7 +27,7 @@
                Log(_Pr.text())
        })
        
-       D(".shouhou-tab-nav").on("click","a",function(){
+       D(".shouhou-tab-nav").on("mouseover","a",function(){
            var _t = D(this),
                _i = _t.attr("data-t");
                
@@ -62,7 +62,16 @@
     //         }
     //     });
 
-        
+    var wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+         typewriter(D(".zhibao-banner"));
+
+       
         
         Log(new Date())
     })

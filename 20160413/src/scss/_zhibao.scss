@@ -3,14 +3,14 @@
 **/
 
 .zhibao-banner-wrap{
-    height: 576px;
+    height: 476px;
     background: url(../images/zhibao-banner-bg.png) no-repeat center center;
     background-size: cover;
     position: relative;
     .zhibao-banner{
         text-align: center;
         padding-top: 280px;
-        font-size: 48px;
+        font-size: 28px;
         color: #FFF;
     }
     .zhibao-banner-line{
@@ -33,14 +33,14 @@
     }
     
     .title{
-        font-size: 28px;
+        font-size: 24px;
         color: #174091;
         word-spacing:8px; 
         letter-spacing: 10px;
         text-transform:uppercase;
     }
     .title-en{
-        font-size: 36px;
+        font-size: 28px;
         word-spacing:2px; 
         letter-spacing: 10px;
         padding-bottom: 50px;
@@ -53,12 +53,25 @@
             width: 400px;
             height: 300px;
             float: left;
-            
+            position: relative;
+            div{
+                position: absolute;
+                width: 400px;
+                height: 300px;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+            }
         }
         .fuwu-text-wrap{
             width: 450px;
             float: right;
-            font-size: 18px;
+            font-size: 16px;
             color: #174091;
             .text-title{
                 text-align: center;
@@ -72,7 +85,7 @@
             .m-text{
                 padding-top: 10px;
                 p{
-                    font-size: 18px;
+                    font-size: 14px;
                     padding-top: 10px;
                 }
             }
@@ -87,7 +100,7 @@
 
 //售后服务
 .zhibao-shouhou-fuwu-wrap{
-    height: 750px;
+    height: 650px;
     background: url(../images/shouhou-bg-1.png) no-repeat center center;
     background-size: cover;
 }
@@ -114,12 +127,12 @@
     }
     
     .title{
-        font-size: 28px;       
+        font-size: 22px;       
         word-spacing:8px; 
         letter-spacing: 10px;
     }
     .title-en{
-        font-size: 36px;
+        font-size: 24px;
         word-spacing:2px; 
         letter-spacing: 10px;
         padding-bottom: 50px;
@@ -141,10 +154,11 @@
             margin-right: 160px;
             span{
                 display: inline-block;
-                width: 94px;
-                height: 94px;
+                width: 60px;
+                height: 54px;
                 background-repeat:  no-repeat;
                 background-position: center center;
+                background-size: cover;
             }
             .icon-1{
                 background-image: url(../images/setting.png)
@@ -179,7 +193,7 @@
     .shouhou-tab-main{
        color: #FFF;
        text-align: center;
-       font-size: 24px;
+       font-size: 18px;
        div{
            display: none;
            padding-top: 30px;
@@ -187,7 +201,7 @@
        table{
            width: 100%;
            td{
-               height: 370px;
+               height: 300px;
                vertical-align: middle;
            }
        }

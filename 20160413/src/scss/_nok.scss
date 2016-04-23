@@ -1,11 +1,13 @@
 // nok
 
 .nok-list-top{
-    height: 120px;
+    height: 90px;
     background: #233762 url(../images/paomiantu.png) no-repeat 70px center;
+    background-size: 33px 31px;
     .nok-list-title{
-        padding-top: 56px;
-        font-size: 22px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 18px;
         color: #f9d91c;
         text-align: right;
         padding-right: 70px;
