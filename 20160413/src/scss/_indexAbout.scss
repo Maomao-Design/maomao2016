@@ -7,6 +7,18 @@
     .index-ab-title{
         padding-top: 36px;
         text-align: center;
+        color: #174091;
+        .title{
+            font-size: 22px;
+        }
+        .title-en{
+            font-size: 32px;
+        }
+        .about-up{
+            height: 30px;
+            background: url(../images/index-about-up.png) no-repeat center center;
+            background-size: 31px 10px; 
+        }
     }
     
    .index-ab-title2{
@@ -35,13 +47,13 @@
        text-align: center;
        padding: 50px 0;
        a{  
-           font-size: 16px;
+           font-size: 14px;
            display: inline-block;
            border: 1px solid #173570;
            color: $co;
            padding: 0 14px;
-           height: 46px;
-           line-height: 50px;
+           height: 40px;
+           line-height: 40px;
            &:hover{
                color: $colorHover;
            }
