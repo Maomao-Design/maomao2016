@@ -74,7 +74,7 @@ function getCatIdList(md,mo,catid,call){
 
 function getDataCom(md,query,call){
     
-    var _url = '{SITE_URL}index.php?c=api&m=data2&format=jsonp&auth='+md+'&param='+ query;
+    var _url = siteUrl+'index.php?c=api&m=data2&format=jsonp&auth='+md+'&param='+ query;
 
     D.ajax(
         {
