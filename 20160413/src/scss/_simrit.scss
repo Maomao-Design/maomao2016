@@ -25,3 +25,32 @@
     overflow: hidden;
     
 }
+
+.simrit-show-title{
+    padding: 5px 16px;
+    background: #233762;
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 20px;
+    strong{
+        padding-right: 10px;
+    }
+}
+
+.simrit-show-lisb{
+    color: #233762;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #233762;
+    .title{
+        color: #233762;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    p{
+        color: #233762;
+    }
+    &.simrit-show-lisb-end{
+        border: none;
+    }
+}

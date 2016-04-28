@@ -69,8 +69,6 @@
       }
     );
     wow.init();
-         typewriter(D(".zhibao-banner"));
-
        
         
         Log(new Date())

@@ -15,12 +15,12 @@
     color: #FFF;
     
     .title{
-        font-size: 24px;
+        font-size: 18px;
         
     }
     .title-en{
-        font-size: 36px;
-        
+        font-size: 24px;
+        padding-left: 5px;
         word-spacing:8px; 
         letter-spacing: 10px;
         text-transform: uppercase;
@@ -35,12 +35,12 @@
     }
     .p1{
         padding-top: 40px;
-        font-size: 22px;
-        
+        font-size: 16px;
+        padding-bottom: 10px;
     }
     .p2,.p3{
-        font-size: 18px;
-        padding-top: 20px;
+        font-size: 14px;
+        
     }
 }
 
@@ -51,11 +51,13 @@
    text-align: center;
    padding: 82px 0 110px 0;
   .title{
-   font-size: 24px;
-   padding-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    word-spacing: 8px;
+    letter-spacing: 10px;
   }
   .title-en{
-      font-size: 30px;
+      font-size: 24px;
       word-spacing:8px; 
       letter-spacing: 10px;
       text-transform: uppercase;
@@ -64,7 +66,7 @@
 
 // tab
 
-$caiTH: 204px;
+$caiTH: 180px;
 
 .caigou-top-tab-wrap{
     height: $caiTH;
@@ -90,7 +92,8 @@ $caiTH: 204px;
     height: $caiTH;
     color: #FFF;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px;
+    
     .tab-sanjiao{
         display: none;
         position: absolute;
@@ -130,7 +133,7 @@ $caiTH: 204px;
     background: #dbdbdb;
     color: #888888;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     .title-nav-a{
         display: inline-block;
         height: $th;

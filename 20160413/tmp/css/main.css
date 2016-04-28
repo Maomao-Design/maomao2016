@@ -222,7 +222,7 @@ input:focus {
     position: relative; }
     .nav li > a {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       text-align: center; }
       .nav li > a:hover {
         color: #f9d91c; }
@@ -234,7 +234,7 @@ input:focus {
       /* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
       text-align: center; }
       .nav li .nav-children a {
-        font-size: 16px;
+        font-size: 14px;
         display: block;
         padding: 6px 0;
         color: #2b3e6a; }
@@ -2992,6 +2992,15 @@ img.tp-slider-alternative-image {
       border-bottom-right-radius: 10px; }
       .index-search-wrap .index-search .index-btn:hover {
         background-color: #3262C1; }
+        .index-search-wrap .index-search .index-btn:hover .fa {
+          margin-left: -5px; }
+      .index-search-wrap .index-search .index-btn .fa {
+        position: relative;
+        top: -3px;
+        transition: .8s;
+        font-size: 26px;
+        color: #FFF;
+        display: inline-block; }
 
 .index-product-wrap {
   height: 420px;
@@ -3023,9 +3032,14 @@ img.tp-slider-alternative-image {
     text-align: center;
     color: #174091; }
     .index-about .index-ab-title .title {
-      font-size: 22px; }
+      font-size: 22px;
+      word-spacing: 8px;
+      letter-spacing: 10px;
+      text-transform: uppercase; }
     .index-about .index-ab-title .title-en {
-      font-size: 32px; }
+      font-size: 20px;
+      padding-top: 10px;
+      word-spacing: 8px; }
     .index-about .index-ab-title .about-up {
       height: 30px;
       background: url(../images/index-about-up.png) no-repeat center center;
@@ -3036,27 +3050,25 @@ img.tp-slider-alternative-image {
     padding-bottom: 24px; }
     .index-about .index-ab-title2 span {
       display: inline-block;
-      font-size: 18px;
-      padding: 5px 40px;
+      font-size: 16px;
+      padding: 4px 17px;
       background: #174091;
       color: #FFF; }
   .index-about .index-ab-content p {
     text-indent: 30px;
-    font-size: 14px;
+    font-size: 12px;
     color: #174091;
-    line-height: 26px;
+    line-height: 19px;
     padding-bottom: 10px; }
   .index-about .index-ab-more {
     text-align: center;
-    padding: 50px 0; }
+    padding: 30px 0; }
     .index-about .index-ab-more a {
       font-size: 14px;
       display: inline-block;
       border: 1px solid #173570;
       color: #174091;
-      padding: 0 14px;
-      height: 40px;
-      line-height: 40px; }
+      padding: 4px 17px; }
       .index-about .index-ab-more a:hover {
         color: #f9d91c; }
 
@@ -3109,11 +3121,15 @@ img.tp-slider-alternative-image {
   padding-top: 84px; }
   .index-contact p {
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px; }
     .index-contact p.p2 {
       padding-top: 10px;
       border-top: 1px solid #FFF; }
+  .index-contact .fa {
+    position: absolute;
+    left: 20px;
+    font-size: 50px; }
   .index-contact .icon-map {
     position: absolute;
     left: 0px; }
@@ -3125,14 +3141,16 @@ img.tp-slider-alternative-image {
     display: inline-block;
     width: 420px; }
   .index-contact .index-ct-box-1 {
-    padding-left: 100px;
+    padding-left: 80px;
     margin-right: 100px; }
+    .index-contact .index-ct-box-1 .fa {
+      top: 30px; }
   .index-contact .index-ct-box-2 {
     height: 115px;
     vertical-align: middle;
     padding-left: 100px;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 50px; }
 
 .animated {
@@ -5699,6 +5717,29 @@ img.tp-slider-alternative-image {
   min-height: 200px;
   overflow: hidden; }
 
+.simrit-show-title {
+  padding: 5px 16px;
+  background: #233762;
+  color: #FFF;
+  font-size: 16px;
+  margin-bottom: 20px; }
+  .simrit-show-title strong {
+    padding-right: 10px; }
+
+.simrit-show-lisb {
+  color: #233762;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #233762; }
+  .simrit-show-lisb .title {
+    color: #233762;
+    font-size: 14px;
+    padding: 10px 0; }
+  .simrit-show-lisb p {
+    color: #233762; }
+  .simrit-show-lisb.simrit-show-lisb-end {
+    border: none; }
+
 .from-wrap {
   width: 100%;
   height: 1021px;
@@ -5718,7 +5759,7 @@ img.tp-slider-alternative-image {
     overflow: hidden; }
     .from-main .from-nav a {
       color: #174091;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 40px;
       width: 50%;
       height: 40px;
@@ -5818,13 +5859,13 @@ img.tp-slider-alternative-image {
     margin: 0; }
 
 .content-banner-wrap {
-  height: 1012px;
+  height: 1092px;
   background: #233762 url(../images/content-bg.png) no-repeat center center;
   background-size: cover;
   color: #FFF; }
 
 .content-banner {
-  padding-top: 240px; }
+  padding-top: 320px; }
   .content-banner .title {
     font-size: 24px;
     text-align: center;
@@ -5842,15 +5883,20 @@ img.tp-slider-alternative-image {
     padding-top: 90px;
     text-align: center;
     padding-bottom: 80px; }
+    .content-banner .mail-wrap .fa {
+      font-size: 56px; }
     .content-banner .mail-wrap a:hover i {
       background-position: -73px 0px; }
     .content-banner .mail-wrap p {
       padding-top: 36px;
       font-size: 18px; }
   .content-banner .address-wrap {
-    border-top: 1px solid #FFF;
     padding-top: 60px;
-    font-size: 14px; }
+    font-size: 14px;
+    width: 800px;
+    margin: 0 auto; }
+    .content-banner .address-wrap .fa {
+      font-size: 26px; }
     .content-banner .address-wrap table {
       width: 100%; }
       .content-banner .address-wrap table th {
@@ -5864,7 +5910,7 @@ img.tp-slider-alternative-image {
         .content-banner .address-wrap table td span {
           vertical-align: middle; }
         .content-banner .address-wrap table td .fr {
-          width: 320px; }
+          width: 280px; }
     .content-banner .address-wrap .test {
       padding-right: 80px; }
 
@@ -5878,13 +5924,15 @@ img.tp-slider-alternative-image {
   position: relative; }
   .zhibao-banner-wrap .zhibao-banner {
     text-align: center;
-    padding-top: 280px;
+    padding-top: 224px;
     font-size: 28px;
-    color: #FFF; }
+    color: #FFF;
+    word-spacing: 8px;
+    letter-spacing: 4px; }
   .zhibao-banner-wrap .zhibao-banner-line {
     position: absolute;
-    width: 210px;
-    height: 2px;
+    width: 180px;
+    height: 1px;
     background-color: #FFF;
     left: 50%;
     bottom: 76px;
@@ -5897,15 +5945,16 @@ img.tp-slider-alternative-image {
     color: #174091;
     text-align: center; }
   .zhibao-fuwu-nuo .title {
-    font-size: 24px;
+    text-indent: 10px;
     color: #174091;
+    font-size: 22px;
     word-spacing: 8px;
     letter-spacing: 10px;
     text-transform: uppercase; }
   .zhibao-fuwu-nuo .title-en {
-    font-size: 28px;
-    word-spacing: 2px;
-    letter-spacing: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    word-spacing: 8px;
     padding-bottom: 50px; }
   .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-pic-wrap {
     width: 400px;
@@ -5932,6 +5981,7 @@ img.tp-slider-alternative-image {
       text-align: center;
       height: 30px;
       line-height: 30px;
+      letter-spacing: 2px;
       background: #f9d91c;
       text-transform: uppercase; }
     .zhibao-fuwu-nuo .fuwu-readme-wrap .fuwu-text-wrap .m-text {
@@ -5966,11 +6016,11 @@ img.tp-slider-alternative-image {
     word-spacing: 8px;
     letter-spacing: 10px; }
   .zhibao-shouhou-fuwu .title-en {
-    font-size: 24px;
-    word-spacing: 2px;
-    letter-spacing: 10px;
-    padding-bottom: 50px;
-    text-transform: uppercase; }
+    font-size: 20px;
+    padding-top: 10px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    padding-bottom: 70px; }
 
 .shouhou-tab-wrap .shouhou-tab-nav {
   height: 94px;
@@ -5987,6 +6037,8 @@ img.tp-slider-alternative-image {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover; }
+    .shouhou-tab-wrap .shouhou-tab-nav a .fa {
+      font-size: 36px; }
     .shouhou-tab-wrap .shouhou-tab-nav a .icon-1 {
       background-image: url(../images/setting.png); }
     .shouhou-tab-wrap .shouhou-tab-nav a .icon-2 {
@@ -6007,7 +6059,9 @@ img.tp-slider-alternative-image {
 .shouhou-tab-wrap .shouhou-tab-main {
   color: #FFF;
   text-align: center;
-  font-size: 18px; }
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 30px; }
   .shouhou-tab-wrap .shouhou-tab-main div {
     display: none;
     padding-top: 30px; }
@@ -6081,9 +6135,10 @@ img.tp-slider-alternative-image {
   text-align: center;
   color: #FFF; }
   .caigou-banner .title {
-    font-size: 24px; }
+    font-size: 18px; }
   .caigou-banner .title-en {
-    font-size: 36px;
+    font-size: 24px;
+    padding-left: 5px;
     word-spacing: 8px;
     letter-spacing: 10px;
     text-transform: uppercase; }
@@ -6095,10 +6150,10 @@ img.tp-slider-alternative-image {
     line-height: 36px; }
   .caigou-banner .p1 {
     padding-top: 40px;
-    font-size: 22px; }
+    font-size: 16px;
+    padding-bottom: 10px; }
   .caigou-banner .p2, .caigou-banner .p3 {
-    font-size: 18px;
-    padding-top: 20px; }
+    font-size: 14px; }
 
 .caigou-xuanxing {
   width: 100%;
@@ -6106,16 +6161,18 @@ img.tp-slider-alternative-image {
   text-align: center;
   padding: 82px 0 110px 0; }
   .caigou-xuanxing .title {
-    font-size: 24px;
-    padding-bottom: 10px; }
+    font-size: 20px;
+    padding-bottom: 20px;
+    word-spacing: 8px;
+    letter-spacing: 10px; }
   .caigou-xuanxing .title-en {
-    font-size: 30px;
+    font-size: 24px;
     word-spacing: 8px;
     letter-spacing: 10px;
     text-transform: uppercase; }
 
 .caigou-top-tab-wrap {
-  height: 204px;
+  height: 180px;
   background: #252b4c; }
 
 .caigou-top-tab {
@@ -6132,10 +6189,10 @@ img.tp-slider-alternative-image {
 .caigou-top-tab-nav {
   position: relative;
   width: 50%;
-  height: 204px;
+  height: 180px;
   color: #FFF;
   cursor: pointer;
-  font-size: 24px; }
+  font-size: 18px; }
   .caigou-top-tab-nav .tab-sanjiao {
     display: none;
     position: absolute;
@@ -6156,7 +6213,7 @@ img.tp-slider-alternative-image {
   .caigou-top-tab-nav .tb {
     width: 100%; }
   .caigou-top-tab-nav td {
-    height: 204px;
+    height: 180px;
     text-align: center;
     vertical-align: middle; }
 
@@ -6164,7 +6221,7 @@ img.tp-slider-alternative-image {
   background: #dbdbdb;
   color: #888888;
   text-align: center;
-  font-size: 18px; }
+  font-size: 16px; }
   .caigou-title-nav-wrap .title-nav-a {
     display: inline-block;
     height: 76px;
@@ -6302,13 +6359,13 @@ img.tp-slider-alternative-image {
       float: left;
       width: 266px; }
       .footer-main .footer-u li .title {
-        font-size: 18px;
+        font-size: 16px;
         font-family: "兰亭黑-简 中黑";
         padding-bottom: 5px;
         font-weight: 400; }
     .footer-main .footer-u .childen a {
       display: block;
-      font-size: 14px;
+      font-size: 12px;
       height: 30px;
       line-height: 30px; }
       .footer-main .footer-u .childen a:hover {
@@ -6317,5 +6374,5 @@ img.tp-slider-alternative-image {
 .footer-cp {
   padding: 30px 0;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   color: #173570; }

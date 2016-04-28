@@ -11,7 +11,7 @@
     padding-top: 84px;
      p{
         text-align: left;
-        font-size: 16px;
+        font-size: 14px;
         // padding: 5px 0;
         line-height: 28px;
         // letter-spacing: 0.5px;
@@ -19,7 +19,13 @@
             padding-top: 10px;
             border-top: 1px solid #FFF;
         }
-    } 
+    }
+    .fa{
+       position: absolute;
+       left: 20px;
+       
+       font-size: 50px; 
+    }
     .icon-map{
         position: absolute;
         left: 0px;
@@ -34,15 +40,18 @@
         width: 420px;
     }
     .index-ct-box-1{
-        padding-left: 100px;
+        padding-left: 80px;
         margin-right: 100px;
+        .fa{
+            top: 30px;
+        }
     }
     .index-ct-box-2{
         height: 115px;
         vertical-align: middle;
         padding-left: 100px;
         text-align: left;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 50px;
     }
     

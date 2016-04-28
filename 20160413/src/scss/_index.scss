@@ -31,6 +31,18 @@
             border-bottom-right-radius: 10px;
             &:hover{
                 background-color: #3262C1;
+                .fa{
+                    margin-left: -5px;
+                }
+            }
+            .fa{
+                 position: relative;
+                 top: -3px;
+                 transition: .8s;
+                 font-size: 26px;
+                 color: #FFF;
+                 display: inline-block;
+                 
             }
         }
     }

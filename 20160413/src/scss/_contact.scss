@@ -1,12 +1,12 @@
 .content-banner-wrap{
-    height: 1012px;
+    height: 1092px;
     background: #233762 url(../images/content-bg.png) no-repeat center center;
     background-size: cover;
     color: #FFF;
 }
 
 .content-banner{
-    padding-top: 240px;
+    padding-top: 320px;
     .title{
         font-size: 24px;
         text-align: center;
@@ -29,6 +29,9 @@
         padding-top: 90px;
         text-align: center;
         padding-bottom: 80px;
+        .fa{
+            font-size: 56px;
+        }
         a:hover{
             i{
                 background-position: -73px 0px;
@@ -41,9 +44,14 @@
     }
     
     .address-wrap{
-        border-top: 1px solid #FFF;
+        // border-top: 1px solid #FFF;
         padding-top: 60px;
         font-size: 14px;
+        width: 800px;
+        margin: 0 auto;
+        .fa{
+            font-size: 26px;
+        }
         table{
             width: 100%;
             th{
@@ -55,11 +63,12 @@
                 width: 50%;
                 vertical-align: middle;
                 padding-bottom: 20px;
+                
                 span{
                     vertical-align: middle;
                 }
                 .fr{
-                    width: 320px;
+                    width: 280px;
                 }
             }
         }
