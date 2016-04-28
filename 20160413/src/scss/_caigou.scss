@@ -84,6 +84,18 @@ $caiTH: 180px;
         left: 50%;
         margin-top: -50px;
     }
+    .caigou-tab-sanjiao{
+        display: none;
+        position: absolute;
+        width:0; 
+        height:0; 
+        border-left:30px solid transparent;
+        border-right:30px solid transparent;
+        border-bottom:30px solid #252B4C;
+        left: 0;
+        top: -20px;
+        transition: all 0.5s;
+    }
 }
 
 .caigou-top-tab-nav{

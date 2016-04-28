@@ -10164,7 +10164,120 @@ function  loaderHtml(ele){
         
         ele.html(str);
         
- }
+}
+
+
+
+/**
+ * cai狗
+ * 
+ */
+function caigouNavOn(){
+	
+	var san = D("#caigou-tab-sanjiao");
+	if(san.length < 1){
+		return;
+	}
+	san.show();
+	var	box = D(".caigou-top-tab"),
+		onDiv = D(".caigou-tab-nav-on"),
+		onDivW = onDiv.attr("data-w"),
+		boxW = box.width();
+	
+	san.css({
+		left: (boxW*onDivW/4)-30
+	});
+}
+
+/**
+ * 弹性运动 
+ * 
+ */
+
+function fiexible(obj,json,way,fn){
+   /*** 按坐标运动  ***/
+   if(way === true){
+      //检测left 与 top 是否都有值
+      if(typeof json.left !='undefined' && typeof json.top !='undefined'){
+         var x = Math.floor(json.left + json.width/2);  //计算X轴中心点
+         var y = Math.floor(json.top + json.height/2);  //计算Y轴中心点
+         //设置初始的left 和 top 值 并让元素显示
+         obj.style.display = 'block';
+         obj.style.left = x-(parseInt(getStyle(obj,'width'))/2) + 'px';  
+         obj.style.top = y-(parseInt(getStyle(obj,'height'))/2) + 'px';
+         //清除margin
+         obj.style.margin = 0 + 'px';
+      }
+   }
+   var newJson = {}
+   /*** 往参数中添加位置属性 用于设置元素的运动初始点 ***/
+   for(var arg in json){
+      newJson[arg] = [json[arg], parseInt(getStyle(obj,arg))]
+      //newJson[arg] = [运动目标点,运动初始点];
+   }
+   var oSite = {};
+   /** 添加单独的属性值  **/
+   for(var attr in newJson){
+      oSite[attr] ={iSpeed:0,curSite:newJson[attr][1],bStop:false};
+      //oSite[attr] = {运动初始速度,运动当前值,判断是否完成运动依据};
+   }
+   /** 运动开始前关闭本身的定时器 **/
+   clearInterval(obj.t);
+   obj.t = setInterval(function(){
+      /*** 循环运动属性  ***/
+      for (var attr in newJson) {
+         /** 运动状态  **/
+         oSite[attr].bStop = false;
+         // iCur 更新运动元素当前的属性值
+          if(attr=='opacity'){   //对透明度单独处理
+              var iCur = parseInt(parseFloat(getStyle(obj, attr))*100);
+         }else{             //普通样式
+              var iCur = parseInt(getStyle(obj, attr));
+         }
+         oSite[attr].iSpeed += (newJson[attr][0] - iCur) /5;       //加速   
+         oSite[attr].iSpeed *= 0.75;                         //磨擦
+         oSite[attr].curSite += oSite[attr].iSpeed;          //更新运动的当前位置
+         //运动停止条件 速度绝对值小于1 并且 当前值与目标值的差值的绝对值小于一
+         if (Math.abs(oSite[attr].iSpeed) < 1 && Math.abs(iCur - newJson[attr][0]) < 1) {
+            
+            //设置样式，对透明度单独处理
+               if(attr=='opacity'){
+                   obj.style.filter='alpha(opacity='+newJson[attr][0]+')';
+               obj.style.opacity=newJson[attr][0]/100;
+            }else{
+               obj.style[attr] = newJson[attr][0] + 'px';  //设置到目标点
+            }
+            
+            oSite[attr].bStop = true;              //设置当前属性运动是否完成
+         }
+         else {
+            //更新运动对象的属性值
+            if(attr=='opacity'){
+                   obj.style.filter='alpha(opacity='+oSite[attr].curSite+')';
+               obj.style.opacity=oSite[attr].curSite/100;
+            }else{
+               obj.style[attr] = oSite[attr].curSite + 'px';   
+            }
+         }
+      }
+      // 校验定时器停止
+      if(checkStop(oSite)){
+         clearInterval(obj.t);
+         if(fn){
+            fn.call(obj)
+         }
+      }
+   }, 30);
+   /** 校验运动是否完成 **/
+   function checkStop(oSite){
+      for(var i in oSite){
+         if(oSite[i].bStop === false){
+            return oSite[i].bStop;
+         }
+      }
+      return true;
+   }
+}
 
 ;(function () {
     D(function() {
@@ -10207,6 +10320,18 @@ function  loaderHtml(ele){
                
                D(".shouhou-tab-"+_i).show();
        })
+       
+       //caigou
+       
+       D(".caigou-top-tab-wrap").on("mouseover",'.caigou-top-tab-nav',function(){
+           D(".caigou-top-tab-wrap .caigou-top-tab-nav").removeClass("caigou-tab-nav-on");
+           D(this).addClass("caigou-tab-nav-on");
+           
+           caigouNavOn()
+       });
+       
+       caigouNavOn();
+
        
     //    DM(".fullSlide").hover(function(){
     //         DM(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)

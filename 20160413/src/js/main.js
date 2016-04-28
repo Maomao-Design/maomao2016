@@ -40,6 +40,18 @@
                D(".shouhou-tab-"+_i).show();
        })
        
+       //caigou
+       
+       D(".caigou-top-tab-wrap").on("mouseover",'.caigou-top-tab-nav',function(){
+           D(".caigou-top-tab-wrap .caigou-top-tab-nav").removeClass("caigou-tab-nav-on");
+           D(this).addClass("caigou-tab-nav-on");
+           
+           caigouNavOn()
+       });
+       
+       caigouNavOn();
+
+       
     //    DM(".fullSlide").hover(function(){
     //         DM(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
     //     },
