@@ -5639,7 +5639,9 @@ img.tp-slider-alternative-image {
   .product-dingzing-tb-wp .product-dingzing-1, .product-dingzing-tb-wp .product-dingzing-2 {
     width: 374px;
     min-height: 200px;
-    background: #f9d91c; }
+    padding: 0 10px; }
+    .product-dingzing-tb-wp .product-dingzing-1 table, .product-dingzing-tb-wp .product-dingzing-2 table {
+      width: 100%; }
 
 .nok-list-top {
   height: 90px;

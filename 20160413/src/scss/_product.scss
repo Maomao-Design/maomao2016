@@ -168,6 +168,9 @@ $bg: #060e29;
     .product-dingzing-1,.product-dingzing-2{
         width: 374px;
         min-height: 200px;
-        background: #f9d91c;
+        padding: 0 10px;
+        table{
+            width: 100%;
+        }
     }
 }
