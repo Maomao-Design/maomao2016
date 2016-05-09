@@ -170,7 +170,14 @@ $bg: #060e29;
         min-height: 200px;
         padding: 0 10px;
         table{
-            width: 100%;
+            border-collapse:collapse;
+            overflow:hidden;
+            tr{
+                white-space:0;
+             }
+             td{
+                 border:#333333 solid 1px;
+             }
         }
     }
 }
