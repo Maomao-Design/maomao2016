@@ -1769,19 +1769,23 @@ img.tp-slider-alternative-image {
 .tp-leftarrow {
 	z-index: 100;
 	cursor: pointer;
-	position: relative;
+	position: absolute;
 	background: url(../assets/large_left.png) no-Repeat top left;
 	width: 40px;
-	height: 40px;
+	height: 40px ;
+	top: 50%;
+	left: 10px;
 }
 
 .tp-rightarrow {
 	z-index: 100;
 	cursor: pointer;
-	position: relative;
+	position: absolute;
 	background: url(../assets/large_right.png) no-Repeat top left;
-	width: 40px;
-	height: 40px;
+	width: 40px ;
+	height: 40px ;
+	top: 50%;
+	right: 10px;
 }
 
 .tp-leftarrow.round {
@@ -1942,8 +1946,8 @@ img.tp-slider-alternative-image {
 	position: relative;    
     background: url(sprite.png) no-repeat center center;
     background-position: -73px -53px;
-    width: 44px;
-    height: 44px;
+    width: 44px !important;
+    height: 44px !important;
 }
 
 .tp-rightarrow.default {
@@ -1952,8 +1956,8 @@ img.tp-slider-alternative-image {
 	position: relative;
 	background: url(sprite.png) no-repeat center center;
     background-position: -143px -53px;
-    width: 44px;
-    height: 44px;
+    width: 44px !important;
+    height: 44px !important;
 }
 
 .tp-leftarrow:hover,
