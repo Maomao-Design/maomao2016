@@ -216,3 +216,31 @@ function fiexible(obj,json,way,fn){
       return true;
    }
 }
+
+
+
+function aboutSwiper(){
+     var swiper = new Swiper('.about-2-banner', {
+        pagination: '.swiper-pagination',
+        // paginationClickable: true,
+        autoplay: 3000,
+        spaceBetween: 30,
+        effect: 'fade'
+    });
+
+    var swiper = new Swiper('.about-3-banner', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        spaceBetween: 30,
+        effect: 'fade'
+    });
+
+    var swiper = new Swiper('.about-4-banner', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        spaceBetween: 30,
+        effect: 'fade'
+    });
+}
