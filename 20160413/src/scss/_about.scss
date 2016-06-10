@@ -8,20 +8,116 @@
 }
 
 .about-banner{
-    text-align: center;
-    padding: 190px 20px 0 20px;
     
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 190px;
+    color: #FFF;
+    .about-1{
+        display: inline-block;
+        width: 740px;
+        height: 344px;
+        overflow: hidden;
+    }
     img{
-        max-width: 96%;
+        max-width: 100%;
+    }
+    .about-1-text{
+        float: right;
+        // display: inline-block;
+        width: 390px;
+        .title{
+            font-size: 20px;
+        }
+        .title-en{
+            color: #f9d91c;
+            font-size: 24px;
+        }
+        .contents{
+            margin-top: 20px;
+            border-top: 1px solid #fff;
+            padding-top: 40px;
+            p{
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
     }
 }
 
 .about-main-wrap{
     padding: 100px 0;
     
-    background: url(../images/about-main-bg.png) no-repeat center bottom;
+    // background: url(../images/about-main-bg.png) no-repeat center bottom;
     
     p{
         margin: 0;
     }
+}
+
+.about-main-2{
+    padding: 100px 0;
+}
+
+.about-2-text{
+    display: inline-block;
+    width: 450px;
+    min-height: 288px;
+    .title{
+        color: #174091;
+        font-size: 20px;
+    }
+    .title-en{
+        color: #174091;
+        font-size: 28px;
+    }
+    .contents{
+        padding-top: 60px;
+        p{
+            text-indent: 26px;
+            line-height: 26px;
+        }
+    }
+}
+.about-2-banner{
+    float: right;
+    width: 400px;
+}
+
+// 3
+
+.about-main-3{
+    padding: 100px 0;
+    clear: both;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+.about-3-text{
+    float: right;
+    width: 402px;
+    min-height: 354px;
+    .contents{
+        
+        p{
+            color: #174091;
+            text-indent: 26px;
+            line-height: 26px;
+            &.p1{
+                font-weight: 700;
+            }
+        }
+    }
+}
+.about-3-banner{
+    float: left;
+    width: 440px;
+    height: 354px;
+}
+
+// 4
+.about-main-4 {
+    height: 680px;
+    background: url(../images/about4.bg.png) no-repeat center center;
+    background-size: cover;
 }
