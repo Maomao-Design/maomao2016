@@ -52,6 +52,18 @@
        caigouNavOn();
 
        
+       D(".new-s-tabs a").on("click",function(){
+           var _t = D(this),
+                _p = _t.parent(),
+                _index = _t.index();
+
+                _p.find("a").removeClass("on");
+                _t.addClass("on");
+
+                D(".new-s-tab-main .new-s-tab-content").removeClass("show").eq(_index).addClass("show");
+
+       })
+
     //    DM(".fullSlide").hover(function(){
     //         DM(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
     //     },
